@@ -1,19 +1,18 @@
 package com.smart_school.smart_school_management.model;
 
 import com.smart_school.smart_school_management.model.enums.Roles;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 
 @Data
 @Entity
 @RequiredArgsConstructor
+@Table(name = "users")
 public class Users {
 
     @Id
-    @Column(name = "userId")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long userId;
 
     @Column(name = "userName")
@@ -23,6 +22,7 @@ public class Users {
     private String password;
 
     @Column(name = "role")
+    @Enumerated(EnumType.STRING)
     private Roles role;
 
     @Column(name = "email")
