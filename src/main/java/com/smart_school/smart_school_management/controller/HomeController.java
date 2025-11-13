@@ -37,7 +37,7 @@ public class HomeController {
 
     @PostMapping("/logout")
     public String logout() {
-        log.info("ok");
+        log.info("ok loogout");
         return "Logout";
     }
 
