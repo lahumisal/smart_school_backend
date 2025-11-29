@@ -9,11 +9,6 @@ public class SmartSchoolManagementApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SmartSchoolManagementApplication.class, args);
-        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(12);
-
-        System.out.println("Principal: " + encoder.encode("Principal"));
-        System.out.println("Teacher: " + encoder.encode("Teacher"));
-        System.out.println("Student: " + encoder.encode("Student"));
 	}
 
 }
