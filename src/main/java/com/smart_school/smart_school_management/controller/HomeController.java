@@ -1,8 +1,5 @@
 package com.smart_school.smart_school_management.controller;
 
-import com.smart_school.smart_school_management.model.request.LoginRequest;
-import com.smart_school.smart_school_management.model.response.LoginResponse;
-import com.smart_school.smart_school_management.service.UserService;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
