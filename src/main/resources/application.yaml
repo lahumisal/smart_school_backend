@@ -33,3 +33,8 @@ spring:
 
 server:
   port: 9091
+
+# encrypting cred
+encryption:
+  algorithm: "AES"
+  secret-key: "SmartSchool2025!@#$"
