@@ -38,3 +38,7 @@ server:
 encryption:
   algorithm: "AES"
   secret-key: "SmartSchool2025!@#$"
+
+  security:
+    user:
+      name: user
